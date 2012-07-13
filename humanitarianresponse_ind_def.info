@@ -1,0 +1,7 @@
+name = HumanitarianResponse Indicator Definitions
+description = HumanitarianResponse - Indicator Definitions
+core = 7.x
+package = Humanitarianresponse
+version = 7.x-1.0
+project = humanitarianresponse_ind_def
+features[features_api][] = api:1
