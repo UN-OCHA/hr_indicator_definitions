@@ -1,5 +1,7 @@
 <?php
 /**
  * @file
- * Drupal needs this blank file.
+ * Code for the humanitarianresponse_ind_def feature.
  */
+
+include_once 'humanitarianresponse_ind_def.features.inc';
