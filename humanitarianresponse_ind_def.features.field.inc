@@ -46,7 +46,10 @@ function humanitarianresponse_ind_def_field_default_fields() {
         'default' => array(
           'label' => 'above',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'diff_custom' => 0,
+            'diff_custom_settings' => array(),
+          ),
           'type' => 'text_default',
           'weight' => 4,
         ),
@@ -134,7 +137,10 @@ function humanitarianresponse_ind_def_field_default_fields() {
         'default' => array(
           'label' => 'above',
           'module' => 'node_reference',
-          'settings' => array(),
+          'settings' => array(
+            'diff_custom' => 0,
+            'diff_custom_settings' => array(),
+          ),
           'type' => 'node_reference_default',
           'weight' => 3,
         ),
@@ -166,7 +172,7 @@ function humanitarianresponse_ind_def_field_default_fields() {
   $fields['node-indicator_definition-field_clusters'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '1',
+      'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_clusters',
@@ -192,6 +198,7 @@ function humanitarianresponse_ind_def_field_default_fields() {
             'parent' => '0',
           ),
         ),
+        'options_list_callback' => 'humanitarianresponse_i18n_allowed_values',
       ),
       'translatable' => '0',
       'type' => 'taxonomy_term_reference',
@@ -205,7 +212,10 @@ function humanitarianresponse_ind_def_field_default_fields() {
         'default' => array(
           'label' => 'above',
           'module' => 'taxonomy',
-          'settings' => array(),
+          'settings' => array(
+            'diff_custom' => 0,
+            'diff_custom_settings' => array(),
+          ),
           'type' => 'taxonomy_term_reference_link',
           'weight' => 0,
         ),
@@ -228,7 +238,7 @@ function humanitarianresponse_ind_def_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => '2',
+        'weight' => '1',
       ),
     ),
   );
@@ -271,7 +281,10 @@ function humanitarianresponse_ind_def_field_default_fields() {
         'default' => array(
           'label' => 'above',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'diff_custom' => 0,
+            'diff_custom_settings' => array(),
+          ),
           'type' => 'text_default',
           'weight' => 1,
         ),
@@ -297,7 +310,76 @@ function humanitarianresponse_ind_def_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '3',
+        'weight' => '2',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-indicator_definition-field_ind_sit_perf'.
+  $fields['node-indicator_definition-field_ind_sit_perf'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_ind_sit_perf',
+      'field_permissions' => array(
+        'type' => '0',
+      ),
+      'foreign keys' => array(),
+      'indexes' => array(
+        'value' => array(
+          0 => 'value',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'list',
+      'settings' => array(
+        'allowed_values' => array(
+          'situational' => 'Situational',
+          'performance' => 'Performance-related',
+        ),
+        'allowed_values_function' => '',
+      ),
+      'translatable' => '0',
+      'type' => 'list_text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'indicator_definition',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'list',
+          'settings' => array(
+            'diff_custom' => 0,
+            'diff_custom_settings' => array(),
+          ),
+          'type' => 'list_default',
+          'weight' => 5,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_ind_sit_perf',
+      'label' => 'Situational or Performance-related',
+      'required' => 1,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_buttons',
+        'weight' => '4',
       ),
     ),
   );
@@ -340,7 +422,10 @@ function humanitarianresponse_ind_def_field_default_fields() {
         'default' => array(
           'label' => 'above',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'diff_custom' => 0,
+            'diff_custom_settings' => array(),
+          ),
           'type' => 'text_default',
           'weight' => 2,
         ),
@@ -366,7 +451,7 @@ function humanitarianresponse_ind_def_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '4',
+        'weight' => '3',
       ),
     ),
   );
@@ -377,6 +462,7 @@ function humanitarianresponse_ind_def_field_default_fields() {
   t('Cluster');
   t('Cluster Objective');
   t('Global Indicator Reference');
+  t('Situational or Performance-related');
   t('Unit');
 
   return $fields;

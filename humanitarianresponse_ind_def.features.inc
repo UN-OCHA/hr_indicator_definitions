@@ -31,7 +31,7 @@ function humanitarianresponse_ind_def_node_info() {
       'base' => 'node_content',
       'description' => t('Indicator definition and reference to Global Indicators'),
       'has_title' => '1',
-      'title_label' => t('Indicator Title'),
+      'title_label' => t('Indicator'),
       'help' => '',
     ),
   );

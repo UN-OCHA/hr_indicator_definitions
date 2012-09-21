@@ -65,7 +65,7 @@ function humanitarianresponse_ind_def_views_default_views() {
   $handler->display->display_options['fields']['title']['hide_empty'] = 0;
   $handler->display->display_options['fields']['title']['empty_zero'] = 0;
   $handler->display->display_options['fields']['title']['link_to_node'] = 1;
-  /* Field: Content: Cluster */
+  /* Field: Content: Cluster(s) */
   $handler->display->display_options['fields']['field_clusters']['id'] = 'field_clusters';
   $handler->display->display_options['fields']['field_clusters']['table'] = 'field_data_field_clusters';
   $handler->display->display_options['fields']['field_clusters']['field'] = 'field_clusters';
@@ -193,7 +193,7 @@ function humanitarianresponse_ind_def_views_default_views() {
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Cluster (field_clusters) */
+  /* Filter criterion: Content: Cluster(s) (field_clusters) */
   $handler->display->display_options['filters']['field_clusters_tid']['id'] = 'field_clusters_tid';
   $handler->display->display_options['filters']['field_clusters_tid']['table'] = 'field_data_field_clusters';
   $handler->display->display_options['filters']['field_clusters_tid']['field'] = 'field_clusters_tid';
@@ -218,6 +218,26 @@ function humanitarianresponse_ind_def_views_default_views() {
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['path'] = 'crf/indicator-definition';
+  $translatables['indicator_definition'] = array(
+    t('Master'),
+    t('Indicator Definition'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('Cluster(s)'),
+    t('Unit'),
+    t('Cluster Objective'),
+    t('Activities'),
+    t('Global Indicator Reference'),
+    t('Cluster'),
+    t('Page'),
+  );
   $export['indicator_definition'] = $view;
 
   return $export;
