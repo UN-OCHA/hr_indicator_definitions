@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * humanitarianresponse_ind_def.views_default.inc
+ * hr_indicator_definitions.views_default.inc
  */
 
 /**
  * Implements hook_views_default_views().
  */
-function humanitarianresponse_ind_def_views_default_views() {
+function hr_indicator_definitions_views_default_views() {
   $export = array();
 
   $view = new view;

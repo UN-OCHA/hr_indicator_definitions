@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * humanitarianresponse_ind_def.features.field.inc
+ * hr_indicator_definitions.features.field.inc
  */
 
 /**
  * Implements hook_field_default_fields().
  */
-function humanitarianresponse_ind_def_field_default_fields() {
+function hr_indicator_definitions_field_default_fields() {
   $fields = array();
 
   // Exported field: 'node-indicator_definition-field_activities'.
@@ -198,7 +198,6 @@ function humanitarianresponse_ind_def_field_default_fields() {
             'parent' => '0',
           ),
         ),
-        'options_list_callback' => 'humanitarianresponse_i18n_allowed_values',
       ),
       'translatable' => '0',
       'type' => 'taxonomy_term_reference',
