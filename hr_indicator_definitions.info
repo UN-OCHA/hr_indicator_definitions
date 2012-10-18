@@ -24,6 +24,11 @@ features[field][] = node-indicator_definition-field_global_ind_id
 features[field][] = node-indicator_definition-field_ind_sit_perf
 features[field][] = node-indicator_definition-field_ind_unit
 features[node][] = indicator_definition
+features[user_permission][] = create indicator_definition content
+features[user_permission][] = delete any indicator_definition content
+features[user_permission][] = delete own indicator_definition content
+features[user_permission][] = edit any indicator_definition content
+features[user_permission][] = edit own indicator_definition content
 features[variable][] = autosave_indicator_definition
 features[variable][] = comment_anonymous_indicator_definition
 features[variable][] = comment_default_mode_indicator_definition
@@ -52,5 +57,3 @@ features[views_view][] = indicator_definition
 l10n path = http://localize.humanitarianresponse.info/sites/localize.humanitarianresponse.info/files/l10n_packager/%core/%project/%project-%release.%language.po
 l10n server = localize.humanitarianresponse.info
 l10n url = http://localize.humanitarianresponse.info/sites/localize.humanitarianresponse.info/files/l10n_packager/l10n_server.xml
-
-
