@@ -22,6 +22,7 @@ features[field][] = node-indicator_definition-field_cluster_obj
 features[field][] = node-indicator_definition-field_clusters
 features[field][] = node-indicator_definition-field_global_ind_id
 features[field][] = node-indicator_definition-field_ind_sit_perf
+features[field][] = node-indicator_definition-field_ind_strategic
 features[field][] = node-indicator_definition-field_ind_unit
 features[node][] = indicator_definition
 features[user_permission][] = create indicator_definition content

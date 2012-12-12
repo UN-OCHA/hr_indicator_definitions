@@ -15,7 +15,8 @@ function hr_indicator_definitions_user_default_permissions() {
     'name' => 'create indicator_definition content',
     'roles' => array(
       0 => 'administrator',
-      1 => 'manager',
+      1 => 'editor',
+      2 => 'manager',
     ),
     'module' => 'node',
   );
@@ -35,7 +36,8 @@ function hr_indicator_definitions_user_default_permissions() {
     'name' => 'delete own indicator_definition content',
     'roles' => array(
       0 => 'administrator',
-      1 => 'manager',
+      1 => 'editor',
+      2 => 'manager',
     ),
     'module' => 'node',
   );
@@ -55,7 +57,8 @@ function hr_indicator_definitions_user_default_permissions() {
     'name' => 'edit own indicator_definition content',
     'roles' => array(
       0 => 'administrator',
-      1 => 'manager',
+      1 => 'editor',
+      2 => 'manager',
     ),
     'module' => 'node',
   );
