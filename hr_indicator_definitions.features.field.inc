@@ -118,44 +118,35 @@ function hr_indicator_definitions_field_default_fields() {
       'entity_types' => array(),
       'field_name' => 'field_cluster_obj',
       'foreign keys' => array(
-        'nid' => array(
+        'node' => array(
           'columns' => array(
-            'nid' => 'nid',
+            'target_id' => 'nid',
           ),
           'table' => 'node',
         ),
       ),
       'indexes' => array(
-        'nid' => array(
-          0 => 'nid',
+        'target_entity' => array(
+          0 => 'target_id',
+        ),
+        'target_id' => array(
+          0 => 'target_id',
         ),
       ),
       'locked' => '0',
-      'module' => 'node_reference',
+      'module' => 'entityreference',
       'settings' => array(
-        'referenceable_types' => array(
-          'assessment' => 0,
-          'cluster_objectives' => 'cluster_objectives',
-          'contact' => 0,
-          'document' => 0,
-          'event' => 0,
-          'highlight' => 0,
-          'humanitarian_profile' => 0,
-          'indicator_definition' => 0,
-          'link' => 0,
-          'map' => 0,
-          'media_gallery' => 0,
-          'news' => 0,
-          'page' => 0,
+        'handler' => 'base',
+        'handler_settings' => array(
+          'target_bundles' => array(
+            'cluster_objectives' => 'cluster_objectives',
+          ),
         ),
-        'view' => array(
-          'args' => array(),
-          'display_name' => '',
-          'view_name' => '',
-        ),
+        'handler_submit' => 'Change handler',
+        'target_type' => 'node',
       ),
       'translatable' => '0',
-      'type' => 'node_reference',
+      'type' => 'entityreference',
     ),
     'field_instance' => array(
       'bundle' => 'indicator_definition',
@@ -165,18 +156,24 @@ function hr_indicator_definitions_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'node_reference',
+          'module' => 'entityreference',
           'settings' => array(
             'diff_custom' => 0,
             'diff_custom_settings' => array(),
+            'link' => TRUE,
           ),
-          'type' => 'node_reference_default',
+          'type' => 'entityreference_label',
           'weight' => '3',
         ),
         'teaser' => array(
           'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
+          'module' => 'entityreference',
+          'settings' => array(
+            'diff_custom' => 0,
+            'diff_custom_settings' => array(),
+            'link' => TRUE,
+          ),
+          'type' => 'entityreference_label',
           'weight' => 0,
         ),
       ),
@@ -189,9 +186,13 @@ function hr_indicator_definitions_field_default_fields() {
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'options',
-        'settings' => array(),
-        'type' => 'options_select',
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => 60,
+        ),
+        'type' => 'entityreference_autocomplete',
         'weight' => '6',
       ),
     ),
