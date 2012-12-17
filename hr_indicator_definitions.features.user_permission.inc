@@ -63,5 +63,15 @@ function hr_indicator_definitions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: view any unpublished indicator_definition content.
+  $permissions['view any unpublished indicator_definition content'] = array(
+    'name' => 'view any unpublished indicator_definition content',
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'manager',
+    ),
+    'module' => 'view_unpublished',
+  );
+
   return $permissions;
 }
