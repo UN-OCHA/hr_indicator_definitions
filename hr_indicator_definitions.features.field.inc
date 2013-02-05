@@ -36,7 +36,9 @@ function hr_indicator_definitions_field_default_fields() {
       ),
       'locked' => '0',
       'module' => 'text',
-      'settings' => array(),
+      'settings' => array(
+        'entity_translation_sync' => FALSE,
+      ),
       'translatable' => '0',
       'type' => 'text_long',
     ),
@@ -94,6 +96,7 @@ function hr_indicator_definitions_field_default_fields() {
             ),
           ),
         ),
+        'entity_translation_sync' => FALSE,
         'text_processing' => '1',
         'user_register_form' => FALSE,
       ),
@@ -136,6 +139,7 @@ function hr_indicator_definitions_field_default_fields() {
       'locked' => '0',
       'module' => 'entityreference',
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'handler' => 'base',
         'handler_settings' => array(
           'target_bundles' => array(
@@ -182,6 +186,7 @@ function hr_indicator_definitions_field_default_fields() {
       'label' => 'Cluster Objective',
       'required' => 1,
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -231,6 +236,7 @@ function hr_indicator_definitions_field_default_fields() {
             'parent' => '0',
           ),
         ),
+        'entity_translation_sync' => FALSE,
       ),
       'translatable' => '0',
       'type' => 'taxonomy_term_reference',
@@ -263,6 +269,7 @@ function hr_indicator_definitions_field_default_fields() {
       'label' => 'Cluster',
       'required' => 1,
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -299,6 +306,7 @@ function hr_indicator_definitions_field_default_fields() {
       'locked' => '0',
       'module' => 'text',
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'max_length' => '20',
       ),
       'translatable' => '0',
@@ -332,6 +340,7 @@ function hr_indicator_definitions_field_default_fields() {
       'label' => 'Global Indicator Reference',
       'required' => 0,
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'text_processing' => '0',
         'user_register_form' => FALSE,
       ),
@@ -372,6 +381,7 @@ function hr_indicator_definitions_field_default_fields() {
           'performance' => 'Performance-related',
         ),
         'allowed_values_function' => '',
+        'entity_translation_sync' => FALSE,
       ),
       'translatable' => '0',
       'type' => 'list_text',
@@ -404,6 +414,7 @@ function hr_indicator_definitions_field_default_fields() {
       'label' => 'Situational or Performance-related',
       'required' => 1,
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -441,6 +452,7 @@ function hr_indicator_definitions_field_default_fields() {
           1 => '',
         ),
         'allowed_values_function' => '',
+        'entity_translation_sync' => FALSE,
       ),
       'translatable' => '0',
       'type' => 'list_boolean',
@@ -477,6 +489,7 @@ function hr_indicator_definitions_field_default_fields() {
       'label' => 'Strategic',
       'required' => 0,
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -517,6 +530,7 @@ function hr_indicator_definitions_field_default_fields() {
       'locked' => '0',
       'module' => 'text',
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'max_length' => '255',
       ),
       'translatable' => '0',
@@ -550,6 +564,7 @@ function hr_indicator_definitions_field_default_fields() {
       'label' => 'Unit',
       'required' => 1,
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'text_processing' => '0',
         'user_register_form' => FALSE,
       ),

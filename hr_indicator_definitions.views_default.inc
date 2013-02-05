@@ -53,7 +53,7 @@ function hr_indicator_definitions_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Cluster */
+  /* Field: Content: Clusters */
   $handler->display->display_options['fields']['field_clusters']['id'] = 'field_clusters';
   $handler->display->display_options['fields']['field_clusters']['table'] = 'field_data_field_clusters';
   $handler->display->display_options['fields']['field_clusters']['field'] = 'field_clusters';
@@ -91,7 +91,7 @@ function hr_indicator_definitions_views_default_views() {
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Cluster (field_clusters) */
+  /* Filter criterion: Content: Clusters (field_clusters) */
   $handler->display->display_options['filters']['field_clusters_tid']['id'] = 'field_clusters_tid';
   $handler->display->display_options['filters']['field_clusters_tid']['table'] = 'field_data_field_clusters';
   $handler->display->display_options['filters']['field_clusters_tid']['field'] = 'field_clusters_tid';
@@ -130,11 +130,12 @@ function hr_indicator_definitions_views_default_views() {
     t('‹ previous'),
     t('next ›'),
     t('last »'),
-    t('Cluster'),
+    t('Clusters'),
     t('Unit'),
     t('Cluster Objective'),
     t('Activities'),
     t('Global Indicator Reference'),
+    t('Cluster'),
     t('Page'),
   );
   $export['indicator_definition'] = $view;

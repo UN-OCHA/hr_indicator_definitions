@@ -14,9 +14,9 @@ function hr_indicator_definitions_user_default_permissions() {
   $permissions['create indicator_definition content'] = array(
     'name' => 'create indicator_definition content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'editor',
-      2 => 'manager',
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'manager' => 'manager',
     ),
     'module' => 'node',
   );
@@ -25,8 +25,8 @@ function hr_indicator_definitions_user_default_permissions() {
   $permissions['delete any indicator_definition content'] = array(
     'name' => 'delete any indicator_definition content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'manager',
+      'administrator' => 'administrator',
+      'manager' => 'manager',
     ),
     'module' => 'node',
   );
@@ -35,9 +35,9 @@ function hr_indicator_definitions_user_default_permissions() {
   $permissions['delete own indicator_definition content'] = array(
     'name' => 'delete own indicator_definition content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'editor',
-      2 => 'manager',
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'manager' => 'manager',
     ),
     'module' => 'node',
   );
@@ -46,8 +46,8 @@ function hr_indicator_definitions_user_default_permissions() {
   $permissions['edit any indicator_definition content'] = array(
     'name' => 'edit any indicator_definition content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'manager',
+      'administrator' => 'administrator',
+      'manager' => 'manager',
     ),
     'module' => 'node',
   );
@@ -56,9 +56,9 @@ function hr_indicator_definitions_user_default_permissions() {
   $permissions['edit own indicator_definition content'] = array(
     'name' => 'edit own indicator_definition content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'editor',
-      2 => 'manager',
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'manager' => 'manager',
     ),
     'module' => 'node',
   );
@@ -67,8 +67,8 @@ function hr_indicator_definitions_user_default_permissions() {
   $permissions['view any unpublished indicator_definition content'] = array(
     'name' => 'view any unpublished indicator_definition content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'manager',
+      'administrator' => 'administrator',
+      'manager' => 'manager',
     ),
     'module' => 'view_unpublished',
   );
