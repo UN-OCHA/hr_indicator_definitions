@@ -67,7 +67,7 @@ function hr_indicator_definitions_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_activities',
-      'label' => 'Activities',
+      'label' => 'Output/Activity',
       'required' => 0,
       'settings' => array(
         'better_formats' => array(
@@ -104,11 +104,16 @@ function hr_indicator_definitions_field_default_fields() {
         'active' => 1,
         'module' => 'text',
         'settings' => array(
+          'maxlength_js' => '',
+          'maxlength_js_enforce' => 0,
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+          'maxlength_js_truncate_html' => 0,
           'rows' => '5',
         ),
         'type' => 'text_textarea',
         'weight' => '7',
       ),
+      'workbench_access_field' => 0,
     ),
   );
 
@@ -582,10 +587,10 @@ function hr_indicator_definitions_field_default_fields() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Activities');
   t('Cluster');
   t('Cluster Objective');
   t('Global Indicator Reference');
+  t('Output/Activity');
   t('Situational or Performance-related');
   t('Strategic');
   t('Unit');

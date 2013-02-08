@@ -69,7 +69,7 @@ function hr_indicator_definitions_views_default_views() {
   $handler->display->display_options['fields']['field_cluster_obj']['table'] = 'field_data_field_cluster_obj';
   $handler->display->display_options['fields']['field_cluster_obj']['field'] = 'field_cluster_obj';
   $handler->display->display_options['fields']['field_cluster_obj']['element_label_colon'] = FALSE;
-  /* Field: Content: Activities */
+  /* Field: Content: Output/Activity */
   $handler->display->display_options['fields']['field_activities']['id'] = 'field_activities';
   $handler->display->display_options['fields']['field_activities']['table'] = 'field_data_field_activities';
   $handler->display->display_options['fields']['field_activities']['field'] = 'field_activities';
@@ -133,7 +133,7 @@ function hr_indicator_definitions_views_default_views() {
     t('Clusters'),
     t('Unit'),
     t('Cluster Objective'),
-    t('Activities'),
+    t('Output/Activity'),
     t('Global Indicator Reference'),
     t('Cluster'),
     t('Page'),
